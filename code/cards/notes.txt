@@ -1,0 +1,9 @@
+// Variables can be declared but cannot be assigned outside a function
+
+:= is needed when initializing a variable
+
+// Whenever we return something from a function, we need to explicitly say what value type it will return
+
+func newCard() string {
+	return "Five of Diamonds"
+}
