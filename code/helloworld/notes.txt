@@ -1,0 +1,27 @@
+go build main.go
+// compiles an executable file
+
+go run main.go
+// compiles an executable file and executes file
+
+"package main"
+// package == project == workspaces
+// package = common code source files
+
+why "main"?
+// executable vs reusable
+// exec: generates a file that we can run vs
+// reus: code used as "helpers", "code dependencies", "utils"
+
+"main" defines the executable package type, any other name won't generate an executable file when using "go build"
+
+main -> executable package
+/any other name/ -> reusable package
+
+File Organization:
+
+package declaration
+
+import other packages that we need
+
+declare functions, do things, etc.
